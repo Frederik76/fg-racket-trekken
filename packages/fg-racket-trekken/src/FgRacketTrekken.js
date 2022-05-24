@@ -127,7 +127,7 @@ export class FgRacketTrekken extends LitElement {
   firstUpdated() {
     const players = localStorage.getItem('players') ? localStorage.getItem('players') : [];
     this.players = players.length === 0 ? players : JSON.parse(players);
-    this.players = contestants;
+    // this.players = contestants;
   }
 
   shuffleArray(array) {
@@ -178,8 +178,8 @@ export class FgRacketTrekken extends LitElement {
       // }
       // const index = this.players.indexOf(pauzePlayer) >= 0 ? this.players.indexOf(pauzePlayer) : i;
 
-      this.players[index].pauzes += 1;
-      this.players[index].state = this.round;
+      this.players[i].pauzes += 1;
+      this.players[i].state = this.round;
     }
     localStorage.setItem('players',JSON.stringify(this.players));
   }
