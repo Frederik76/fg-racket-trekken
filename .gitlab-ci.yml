@@ -1,0 +1,75 @@
+image: fruitloops-public.docker.ing.net/ing-web-cli:latest
+
+# Default job configuration
+before_script:
+  - web system:config:validate
+
+stages:
+  - init
+  - verify
+  - build
+  - test
+
+# Anchors
+.tags: &tags
+  tags:
+    - front-end
+    - fruitloops
+
+# Jobs
+init:
+  <<: *tags
+  stage: init
+  artifacts:
+    expire_in: 2 hrs
+    paths:
+      - node_modules/
+  script:
+    - web init:npm:install
+
+
+prod_init:
+  <<: *tags
+  stage: init
+  artifacts:
+    expire_in: 2 hrs
+    paths:
+      - node_modules/
+  script:
+    - web init:npm:install --production
+
+eslint:
+  <<: *tags
+  stage: verify
+  dependencies:
+    - init
+  script:
+    - web verify:es:eslint
+
+retirejs:
+  <<: *tags
+  stage: verify
+  dependencies:
+    - prod_init
+  script:
+    - web verify:es:retirejs --severity=medium
+
+karma:
+  <<: *tags
+  stage: test
+  dependencies:
+    - init
+  script:
+    - web test:es:karma -c karma.conf.js
+
+projectbuild:
+  <<: *tags
+  stage: build
+  dependencies:
+    - init
+    - prod_init
+  artifacts:
+    paths:
+      - dist/
+  script:
+    - web build:custom:webpack --acknowledgement --config ./webpack.config.js
