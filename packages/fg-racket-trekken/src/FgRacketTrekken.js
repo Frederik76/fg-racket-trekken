@@ -146,37 +146,37 @@ export class FgRacketTrekken extends LitElement {
     this.players.sort((a, b)=> a.pauzes - b.pauzes);
     for (let i = 0; i < numberOfPauzes; i+=1) {
       // eslint-disable-next-line no-param-reassign
-      men = this.players.filter((player)=>player.sex === 'm').length;
-      let pauzePlayer = {};
-      switch (true) {
-        case (men > 3):
-          console.log('genoeg mannen');
-          break;
-        case (men > 1 && men < 4):
-          console.log('niet genoeg voor HD')
-          break;
-        case (men > 0 && men < 2):
-          console.log('niet genoeg voor MD')
-          pauzePlayer = this.players.find(player => player.state < this.round && player.sex === 'm' )
-          break;
-        default:
-          console.log('er is iets fout gegaan')
-      }
-      switch (true) {
-        case (women > 3):
-          console.log('genoeg vrouwen');
-          break;
-        case (women > 1 && women < 4):
-          console.log('niet genoeg voor DD')
-          break;
-        case (women > 0 && women < 2):
-          console.log('niet genoeg voor MD')
-          pauzePlayer = this.players.find(player => player.state < this.round && player.sex === 'f' )
-          break;
-        default:
-          console.log('er is iets fout gegaan')
-      }
-      const index = this.players.indexOf(pauzePlayer) >= 0 ? this.players.indexOf(pauzePlayer) : i;
+      // men = this.players.filter((player)=>player.sex === 'm').length;
+      // let pauzePlayer = {};
+      // switch (true) {
+      //   case (men > 3):
+      //     console.log('genoeg mannen');
+      //     break;
+      //   case (men > 1 && men < 4):
+      //     console.log('niet genoeg voor HD')
+      //     break;
+      //   case (men > 0 && men < 2):
+      //     console.log('niet genoeg voor MD')
+      //     pauzePlayer = this.players.find(player => player.state < this.round && player.sex === 'm' )
+      //     break;
+      //   default:
+      //     console.log('er is iets fout gegaan')
+      // }
+      // switch (true) {
+      //   case (women > 3):
+      //     console.log('genoeg vrouwen');
+      //     break;
+      //   case (women > 1 && women < 4):
+      //     console.log('niet genoeg voor DD')
+      //     break;
+      //   case (women > 0 && women < 2):
+      //     console.log('niet genoeg voor MD')
+      //     pauzePlayer = this.players.find(player => player.state < this.round && player.sex === 'f' )
+      //     break;
+      //   default:
+      //     console.log('er is iets fout gegaan')
+      // }
+      // const index = this.players.indexOf(pauzePlayer) >= 0 ? this.players.indexOf(pauzePlayer) : i;
 
       this.players[index].pauzes += 1;
       this.players[index].state = this.round;
