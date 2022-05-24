@@ -901,16 +901,6 @@
     "lodash" "^4.17.19"
     "to-fast-properties" "^2.0.0"
 
-"@bundled-es-modules/axios@0.18.1":
-  "integrity" "sha1-i+7byS6bDtfffGy9xt/OhNMG2As="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@bundled-es-modules/axios/-/axios-0.18.1.tgz"
-  "version" "0.18.1"
-
-"@bundled-es-modules/message-format@6.0.4":
-  "integrity" "sha1-Iy2mh3rblg9sj1mMcliKhDUt4Uc="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@bundled-es-modules/message-format/-/message-format-6.0.4.tgz"
-  "version" "6.0.4"
-
 "@floating-ui/core@^0.5.0":
   "integrity" "sha1-2F0Yk4xAgPKNrjOPVJnTcv+Tp/8="
   "resolved" "https://pkgs.dev.azure.com/INGCDaaS/IngOne/_packaging/central-npm-feed/npm/registry/@floating-ui/core/-/core-0.5.1.tgz"
@@ -966,345 +956,6 @@
   "version" "3.1.0"
   dependencies:
     "vary" "^1.1.2"
-
-"@lion/accordion@0.2.4":
-  "integrity" "sha1-uMvzjMWWo8JtOIe6JIc94VToFtQ="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/accordion/-/accordion-0.2.4.tgz"
-  "version" "0.2.4"
-  dependencies:
-    "@lion/core" "0.13.4"
-
-"@lion/ajax@0.5.10":
-  "integrity" "sha1-B2L+YZTw56lQxHdkmlYMrYU7IR8="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/ajax/-/ajax-0.5.10.tgz"
-  "version" "0.5.10"
-  dependencies:
-    "@bundled-es-modules/axios" "0.18.1"
-    "@lion/core" "0.13.4"
-    "singleton-manager" "1.1.2"
-
-"@lion/button@0.8.5":
-  "integrity" "sha1-pnIC55bUVSqCZJRxqXregg57Qf8="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/button/-/button-0.8.5.tgz"
-  "version" "0.8.5"
-  dependencies:
-    "@lion/core" "0.13.4"
-
-"@lion/calendar@0.12.5":
-  "integrity" "sha1-Vt+s9igM1Sy7+bEonmTNgJfFjps="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/calendar/-/calendar-0.12.5.tgz"
-  "version" "0.12.5"
-  dependencies:
-    "@lion/core" "0.13.4"
-    "@lion/localize" "0.15.0"
-
-"@lion/checkbox-group@0.12.8":
-  "integrity" "sha1-WaLMQVkQw6C+n7HAS8iannp4Wxo="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/checkbox-group/-/checkbox-group-0.12.8.tgz"
-  "version" "0.12.8"
-  dependencies:
-    "@lion/core" "0.13.4"
-    "@lion/fieldset" "0.15.8"
-    "@lion/form-core" "0.6.10"
-    "@lion/input" "0.10.8"
-
-"@lion/collapsible@0.2.5":
-  "integrity" "sha1-rRtOkrEOQgleVkX9lZioCy6IPo8="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/collapsible/-/collapsible-0.2.5.tgz"
-  "version" "0.2.5"
-  dependencies:
-    "@lion/core" "0.13.4"
-
-"@lion/combobox@0.1.10":
-  "integrity" "sha1-kShG2CWoqfTQD9YWhXFegYz7JWM="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/combobox/-/combobox-0.1.10.tgz"
-  "version" "0.1.10"
-  dependencies:
-    "@lion/core" "0.13.4"
-    "@lion/form-core" "0.6.10"
-    "@lion/listbox" "0.3.7"
-    "@lion/overlays" "0.22.2"
-
-"@lion/core@0.13.4":
-  "integrity" "sha1-OX8yTFbRn1/IS5p3T+gWnxwAK7A="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/core/-/core-0.13.4.tgz"
-  "version" "0.13.4"
-  dependencies:
-    "@open-wc/dedupe-mixin" "^1.2.18"
-    "@open-wc/scoped-elements" "^1.2.2"
-    "lit-element" "~2.4.0"
-    "lit-html" "^1.3.0"
-
-"@lion/dialog@0.9.7":
-  "integrity" "sha1-fz+tfB6rN4YkDPGcxOBUFAq5Qm8="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/dialog/-/dialog-0.9.7.tgz"
-  "version" "0.9.7"
-  dependencies:
-    "@lion/core" "0.13.4"
-    "@lion/overlays" "0.22.2"
-
-"@lion/fieldset@0.15.8":
-  "integrity" "sha1-hVZyPDOOIVFboumz1IbC5b2I7rE="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/fieldset/-/fieldset-0.15.8.tgz"
-  "version" "0.15.8"
-  dependencies:
-    "@lion/core" "0.13.4"
-    "@lion/form-core" "0.6.10"
-
-"@lion/form-core@0.6.10":
-  "integrity" "sha1-G34zOBUUKj2cOoBqqObno8cWjfE="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/form-core/-/form-core-0.6.10.tgz"
-  "version" "0.6.10"
-  dependencies:
-    "@lion/core" "0.13.4"
-    "@lion/localize" "0.15.0"
-
-"@lion/form-integrations@0.3.14":
-  "integrity" "sha1-Op7UPfXJfzkr2aP2zvk046RbJY4="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/form-integrations/-/form-integrations-0.3.14.tgz"
-  "version" "0.3.14"
-  dependencies:
-    "@lion/button" "0.8.5"
-    "@lion/checkbox-group" "0.12.8"
-    "@lion/core" "0.13.4"
-    "@lion/fieldset" "0.15.8"
-    "@lion/form" "0.7.8"
-    "@lion/form-core" "0.6.10"
-    "@lion/input" "0.10.8"
-    "@lion/input-date" "0.8.8"
-    "@lion/input-datepicker" "0.18.4"
-    "@lion/input-email" "0.9.8"
-    "@lion/input-iban" "0.10.8"
-    "@lion/input-range" "0.5.8"
-    "@lion/localize" "0.15.0"
-    "@lion/radio-group" "0.12.8"
-    "@lion/select" "0.8.8"
-    "@lion/select-rich" "0.21.14"
-    "@lion/textarea" "0.8.8"
-    "@lion/validate-messages" "0.3.8"
-
-"@lion/form@0.7.8":
-  "integrity" "sha1-3l3hgxDeSfYgaOOPDgRXcsApOKQ="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/form/-/form-0.7.8.tgz"
-  "version" "0.7.8"
-  dependencies:
-    "@lion/core" "0.13.4"
-    "@lion/fieldset" "0.15.8"
-
-"@lion/helpers@0.5.15":
-  "integrity" "sha1-eV8og6hAl5RL1noyBV2x93mjC00="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/helpers/-/helpers-0.5.15.tgz"
-  "version" "0.5.15"
-  dependencies:
-    "@lion/core" "0.13.4"
-
-"@lion/icon@0.8.3":
-  "integrity" "sha1-MSs9FmP25/RMq4rTfUISKw/d+a8="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/icon/-/icon-0.8.3.tgz"
-  "version" "0.8.3"
-  dependencies:
-    "@lion/core" "0.13.4"
-    "singleton-manager" "1.1.2"
-
-"@lion/input-amount@0.8.8":
-  "integrity" "sha1-Yp58u3wB1Alp1g47/tsLxfdilYo="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/input-amount/-/input-amount-0.8.8.tgz"
-  "version" "0.8.8"
-  dependencies:
-    "@lion/core" "0.13.4"
-    "@lion/form-core" "0.6.10"
-    "@lion/input" "0.10.8"
-    "@lion/localize" "0.15.0"
-
-"@lion/input-date@0.8.8":
-  "integrity" "sha1-b8ZUQWlk0FeI/zPH8NUnF9rYokQ="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/input-date/-/input-date-0.8.8.tgz"
-  "version" "0.8.8"
-  dependencies:
-    "@lion/core" "0.13.4"
-    "@lion/form-core" "0.6.10"
-    "@lion/input" "0.10.8"
-    "@lion/localize" "0.15.0"
-
-"@lion/input-datepicker@0.18.4":
-  "integrity" "sha1-pmmzVR+WLqa7y0QUkmXDNqnvpdg="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/input-datepicker/-/input-datepicker-0.18.4.tgz"
-  "version" "0.18.4"
-  dependencies:
-    "@lion/calendar" "0.12.5"
-    "@lion/core" "0.13.4"
-    "@lion/form-core" "0.6.10"
-    "@lion/input-date" "0.8.8"
-    "@lion/localize" "0.15.0"
-    "@lion/overlays" "0.22.2"
-
-"@lion/input-email@0.9.8":
-  "integrity" "sha1-vSXS3vMjl757HQ43smIH67vhIaw="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/input-email/-/input-email-0.9.8.tgz"
-  "version" "0.9.8"
-  dependencies:
-    "@lion/core" "0.13.4"
-    "@lion/form-core" "0.6.10"
-    "@lion/input" "0.10.8"
-    "@lion/localize" "0.15.0"
-
-"@lion/input-iban@0.10.8":
-  "integrity" "sha1-DAgaL30Ie5KLuWo1yZkH+a0O1Fw="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/input-iban/-/input-iban-0.10.8.tgz"
-  "version" "0.10.8"
-  dependencies:
-    "@lion/core" "0.13.4"
-    "@lion/form-core" "0.6.10"
-    "@lion/input" "0.10.8"
-    "@lion/localize" "0.15.0"
-    "ibantools" "^2.2.0"
-
-"@lion/input-range@0.5.8":
-  "integrity" "sha1-qd8IcbqbEWsNswdK3NjW0tULG/A="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/input-range/-/input-range-0.5.8.tgz"
-  "version" "0.5.8"
-  dependencies:
-    "@lion/core" "0.13.4"
-    "@lion/form-core" "0.6.10"
-    "@lion/input" "0.10.8"
-    "@lion/localize" "0.15.0"
-
-"@lion/input-stepper@0.1.9":
-  "integrity" "sha1-pLfVu+wY5SyEW5q4l8D2gezY1U0="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/input-stepper/-/input-stepper-0.1.9.tgz"
-  "version" "0.1.9"
-  dependencies:
-    "@lion/core" "0.13.4"
-    "@lion/form-core" "0.6.10"
-    "@lion/input" "0.10.8"
-
-"@lion/input@0.10.8":
-  "integrity" "sha1-CG58RzjNOziLH7WpOEGU/Aa1x9s="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/input/-/input-0.10.8.tgz"
-  "version" "0.10.8"
-  dependencies:
-    "@lion/core" "0.13.4"
-    "@lion/form-core" "0.6.10"
-
-"@lion/listbox@0.3.7":
-  "integrity" "sha1-tMVuCd0ZJh6ZFugCiERpjYG8DqE="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/listbox/-/listbox-0.3.7.tgz"
-  "version" "0.3.7"
-  dependencies:
-    "@lion/core" "0.13.4"
-    "@lion/form-core" "0.6.10"
-
-"@lion/localize@0.15.0":
-  "integrity" "sha1-8Rzei51cIBoy8RzRLrkVIR1js/A="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/localize/-/localize-0.15.0.tgz"
-  "version" "0.15.0"
-  dependencies:
-    "@bundled-es-modules/message-format" "6.0.4"
-    "@lion/core" "0.13.4"
-    "singleton-manager" "1.1.2"
-
-"@lion/overlays@0.22.2":
-  "integrity" "sha1-reNl+ZD5/UjPrJSR2/Lz98KofMQ="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/overlays/-/overlays-0.22.2.tgz"
-  "version" "0.22.2"
-  dependencies:
-    "@lion/core" "0.13.4"
-    "popper.js" "^1.15.0"
-    "singleton-manager" "1.1.2"
-
-"@lion/pagination@0.2.6":
-  "integrity" "sha1-LpF/x+6a96QXOcoGlQZ69/prq7Y="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/pagination/-/pagination-0.2.6.tgz"
-  "version" "0.2.6"
-  dependencies:
-    "@lion/core" "0.13.4"
-    "@lion/localize" "0.15.0"
-
-"@lion/progress-indicator@0.2.5":
-  "integrity" "sha1-7TCLMsnaVhcA084Gy1iUnPm8dxE="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/progress-indicator/-/progress-indicator-0.2.5.tgz"
-  "version" "0.2.5"
-  dependencies:
-    "@lion/core" "0.13.4"
-    "@lion/localize" "0.15.0"
-
-"@lion/radio-group@0.12.8":
-  "integrity" "sha1-KsMz9g1sTBOO2jowhshqA6mTCrQ="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/radio-group/-/radio-group-0.12.8.tgz"
-  "version" "0.12.8"
-  dependencies:
-    "@lion/core" "0.13.4"
-    "@lion/fieldset" "0.15.8"
-    "@lion/form-core" "0.6.10"
-    "@lion/input" "0.10.8"
-
-"@lion/select-rich@0.21.14":
-  "integrity" "sha1-Po882CGQ+24ucqC0pglQeUi4LlM="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/select-rich/-/select-rich-0.21.14.tgz"
-  "version" "0.21.14"
-  dependencies:
-    "@lion/button" "0.8.5"
-    "@lion/core" "0.13.4"
-    "@lion/form-core" "0.6.10"
-    "@lion/listbox" "0.3.7"
-    "@lion/overlays" "0.22.2"
-
-"@lion/select@0.8.8":
-  "integrity" "sha1-BqTD9jam3kYTETQIXd9iDEJ33QU="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/select/-/select-0.8.8.tgz"
-  "version" "0.8.8"
-  dependencies:
-    "@lion/core" "0.13.4"
-    "@lion/form-core" "0.6.10"
-
-"@lion/steps@0.6.4":
-  "integrity" "sha1-MjG1L70un7A5qY/0y0kHUXqgTHU="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/steps/-/steps-0.6.4.tgz"
-  "version" "0.6.4"
-  dependencies:
-    "@lion/core" "0.13.4"
-
-"@lion/switch@0.12.8":
-  "integrity" "sha1-S0XBdUwirmedEC1MUrX5Dbl9QSM="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/switch/-/switch-0.12.8.tgz"
-  "version" "0.12.8"
-  dependencies:
-    "@lion/core" "0.13.4"
-    "@lion/form-core" "0.6.10"
-
-"@lion/tabs@0.5.10":
-  "integrity" "sha1-tQ0KyyqxWUbWVoYEL1Tpmly2jnE="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/tabs/-/tabs-0.5.10.tgz"
-  "version" "0.5.10"
-  dependencies:
-    "@lion/core" "0.13.4"
-
-"@lion/textarea@0.8.8":
-  "integrity" "sha1-rqb9DHQmWHMniJblcv8Kxkw1LL4="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/textarea/-/textarea-0.8.8.tgz"
-  "version" "0.8.8"
-  dependencies:
-    "@lion/core" "0.13.4"
-    "@lion/form-core" "0.6.10"
-    "@types/autosize" "^3.0.7"
-    "autosize" "4.0.2"
-
-"@lion/tooltip@0.15.7":
-  "integrity" "sha1-N5eNADNZ++4LzQq8ZptrHB0xNZY="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/tooltip/-/tooltip-0.15.7.tgz"
-  "version" "0.15.7"
-  dependencies:
-    "@lion/core" "0.13.4"
-    "@lion/overlays" "0.22.2"
-
-"@lion/validate-messages@0.3.8":
-  "integrity" "sha1-+v2ZMp17Rr+CUBIZN39EL5uFguY="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@lion/validate-messages/-/validate-messages-0.3.8.tgz"
-  "version" "0.3.8"
-  dependencies:
-    "@lion/core" "0.13.4"
-    "@lion/form-core" "0.6.10"
-    "@lion/localize" "0.15.0"
 
 "@lit-labs/react@^1.0.2":
   "integrity" "sha1-6HpiAziVWk4SFjsPO+4YqZxlEXQ="
@@ -1474,7 +1125,7 @@
     "@open-wc/semantic-dom-diff" "^0.13.16"
     "@types/chai" "^4.1.7"
 
-"@open-wc/dedupe-mixin@^1.2.18", "@open-wc/dedupe-mixin@^1.3.0":
+"@open-wc/dedupe-mixin@^1.3.0":
   "integrity" "sha1-DfXUOChfw0goOHhu6BiVMY8P93g="
   "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@open-wc/dedupe-mixin/-/dedupe-mixin-1.3.0.tgz"
   "version" "1.3.0"
@@ -1590,7 +1241,7 @@
     "@open-wc/rollup-plugin-html" "^1.2.5"
     "polyfills-loader" "^1.7.5"
 
-"@open-wc/scoped-elements@^1.2.2", "@open-wc/scoped-elements@^1.2.4":
+"@open-wc/scoped-elements@^1.2.4":
   "integrity" "sha1-auVMSXMbvow+C1ODyYn5g9zfrPU="
   "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@open-wc/scoped-elements/-/scoped-elements-1.3.2.tgz"
   "version" "1.3.2"
@@ -1753,13 +1404,6 @@
   "version" "1.3.5"
   dependencies:
     "@types/node" "*"
-
-"@types/autosize@^3.0.7":
-  "integrity" "sha1-9doo1+pFMsi2BXPWfsBPyGb6E9s="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@types/autosize/-/autosize-3.0.7.tgz"
-  "version" "3.0.7"
-  dependencies:
-    "@types/jquery" "*"
 
 "@types/babel__core@^7.1.3":
   "integrity" "sha1-TY6eUesmVVKn5PH/IhmrYTO9+y0="
@@ -1937,13 +1581,6 @@
   "integrity" "sha1-aCR327vQfNAycxyzsOfq7j0Ca2k="
   "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@types/http-errors/-/http-errors-1.8.0.tgz"
   "version" "1.8.0"
-
-"@types/jquery@*":
-  "integrity" "sha1-6SP30FynkFMPF/gKO4m8KIU/oX8="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@types/jquery/-/jquery-3.5.4.tgz"
-  "version" "3.5.4"
-  dependencies:
-    "@types/sizzle" "*"
 
 "@types/json-schema@^7.0.5":
   "integrity" "sha1-9MfsQ+gbMZqYFRFQMXCfJph4kfA="
@@ -2147,11 +1784,6 @@
   "integrity" "sha1-OoTPXsMklDkBXhQEm9MWFBm/nq4="
   "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@types/sinonjs__fake-timers/-/sinonjs__fake-timers-6.0.2.tgz"
   "version" "6.0.2"
-
-"@types/sizzle@*":
-  "integrity" "sha1-qBG4wY4rq6t9VCszZYh64uTZ3kc="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/@types/sizzle/-/sizzle-2.3.2.tgz"
-  "version" "2.3.2"
 
 "@types/trusted-types@^2.0.2":
   "integrity" "sha1-/CWtmUO8rBHM64Fo208nXg5y51Y="
@@ -2688,11 +2320,6 @@
   "integrity" "sha1-bZUX654DDSQ2ZmZR6GvZ9vE1M8k="
   "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/atob/-/atob-2.1.2.tgz"
   "version" "2.1.2"
-
-"autosize@4.0.2":
-  "integrity" "sha1-Bzz9B8i/RdpLn9FTQ39br7uh5Mk="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/autosize/-/autosize-4.0.2.tgz"
-  "version" "4.0.2"
 
 "aws-sign2@~0.7.0":
   "integrity" "sha1-tG6JCTSpWR8tL2+G1+ap8bP+dqg="
@@ -5972,11 +5599,6 @@
     "run-node" "^1.0.0"
     "slash" "^2.0.0"
 
-"ibantools@^2.2.0":
-  "integrity" "sha1-Ofc6iLVPdgl1kp7SG7C+EWHenFs="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/ibantools/-/ibantools-2.2.0.tgz"
-  "version" "2.2.0"
-
 "iconv-lite@^0.4.24", "iconv-lite@0.4.24":
   "integrity" "sha1-ICK0sl+93CHS9SSXSkdKr+czkIs="
   "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/iconv-lite/-/iconv-lite-0.4.24.tgz"
@@ -6067,50 +5689,6 @@
   dependencies:
     "once" "^1.3.0"
     "wrappy" "1"
-
-"ing-web@^2.0.0":
-  "integrity" "sha1-6UE6IEG+DqLAGBjRuAZPWgjgrY0="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/ing-web/-/ing-web-2.21.1.tgz"
-  "version" "2.21.1"
-  dependencies:
-    "@lion/accordion" "0.2.4"
-    "@lion/ajax" "0.5.10"
-    "@lion/button" "0.8.5"
-    "@lion/calendar" "0.12.5"
-    "@lion/checkbox-group" "0.12.8"
-    "@lion/collapsible" "0.2.5"
-    "@lion/combobox" "0.1.10"
-    "@lion/core" "0.13.4"
-    "@lion/dialog" "0.9.7"
-    "@lion/fieldset" "0.15.8"
-    "@lion/form" "0.7.8"
-    "@lion/form-core" "0.6.10"
-    "@lion/form-integrations" "0.3.14"
-    "@lion/helpers" "0.5.15"
-    "@lion/icon" "0.8.3"
-    "@lion/input" "0.10.8"
-    "@lion/input-amount" "0.8.8"
-    "@lion/input-date" "0.8.8"
-    "@lion/input-datepicker" "0.18.4"
-    "@lion/input-email" "0.9.8"
-    "@lion/input-iban" "0.10.8"
-    "@lion/input-range" "0.5.8"
-    "@lion/input-stepper" "0.1.9"
-    "@lion/listbox" "0.3.7"
-    "@lion/localize" "0.15.0"
-    "@lion/overlays" "0.22.2"
-    "@lion/pagination" "0.2.6"
-    "@lion/progress-indicator" "0.2.5"
-    "@lion/radio-group" "0.12.8"
-    "@lion/select" "0.8.8"
-    "@lion/select-rich" "0.21.14"
-    "@lion/steps" "0.6.4"
-    "@lion/switch" "0.12.8"
-    "@lion/tabs" "0.5.10"
-    "@lion/textarea" "0.8.8"
-    "@lion/tooltip" "0.15.7"
-    "@lion/validate-messages" "0.3.8"
-    "singleton-manager" "^1.0.0"
 
 "inherits@^2.0.0", "inherits@^2.0.1", "inherits@^2.0.3", "inherits@^2.0.4", "inherits@~2.0.1", "inherits@~2.0.3", "inherits@2", "inherits@2.0.4":
   "integrity" "sha1-D6LGT5MpF8NDOg3tVTY6rjdBa3w="
@@ -7181,7 +6759,7 @@
     "p-map" "^2.0.0"
     "rxjs" "^6.3.3"
 
-"lit-element@^2.2.1", "lit-element@^2.3.1", "lit-element@~2.4.0":
+"lit-element@^2.2.1", "lit-element@^2.3.1":
   "integrity" "sha1-siYHoDeo/Aj1qAc23d9/P11AFFI="
   "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/lit-element/-/lit-element-2.4.0.tgz"
   "version" "2.4.0"
@@ -7196,7 +6774,7 @@
     "@lit/reactive-element" "^1.3.0"
     "lit-html" "^2.2.0"
 
-"lit-html@^1.0.0", "lit-html@^1.1.1", "lit-html@^1.2.1", "lit-html@^1.3.0":
+"lit-html@^1.0.0", "lit-html@^1.1.1", "lit-html@^1.2.1":
   "integrity" "sha1-yA88xXk6bepsBxcr6QpwqyDlYDQ="
   "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/lit-html/-/lit-html-1.3.0.tgz"
   "version" "1.3.0"
@@ -8541,11 +8119,6 @@
     "terser" "^4.6.7"
     "whatwg-fetch" "^3.0.0"
 
-"popper.js@^1.15.0":
-  "integrity" "sha1-KiI8s9x7YhPXQOQDcr5A3kPmWxs="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/popper.js/-/popper.js-1.16.1.tgz"
-  "version" "1.16.1"
-
 "portfinder@^1.0.21":
   "integrity" "sha1-Z8RiKFK9U3TdHdkA93n1NGL6x3g="
   "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/portfinder/-/portfinder-1.0.28.tgz"
@@ -9556,16 +9129,6 @@
   "version" "0.2.2"
   dependencies:
     "is-arrayish" "^0.3.1"
-
-"singleton-manager@^1.0.0":
-  "integrity" "sha1-X4D4m9o6Sbkmzm9yHBSr3Yv/Bno="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/singleton-manager/-/singleton-manager-1.2.0.tgz"
-  "version" "1.2.0"
-
-"singleton-manager@1.1.2":
-  "integrity" "sha1-NckLn4YBLkvDNCGDo5+uJ+jwXyQ="
-  "resolved" "https://artifactory.ing.net:443/artifactory/api/npm/releases_npm_all/singleton-manager/-/singleton-manager-1.1.2.tgz"
-  "version" "1.1.2"
 
 "sinon-chai@^3.3.0":
   "integrity" "sha1-yaeDBLDhW+/lfvaOioWgBVP1xg4="

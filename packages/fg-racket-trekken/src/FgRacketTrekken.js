@@ -1,6 +1,9 @@
-import { LitElement, html, css } from 'lit';
-import '@shoelace-style/shoelace/dist/components/button/button.js';
-import '@shoelace-style/shoelace/dist/components/input/input.js';
+// eslint-disable-next-line import/no-unresolved
+import { LitElement, html, css } from 'https://unpkg.com/lit-element/lit-element.js?module';
+// eslint-disable-next-line import/no-unresolved
+import 'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/components/button/button.js';
+// eslint-disable-next-line import/no-unresolved
+import 'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/components/input/input.js';
 import { contestants } from "./spelers.js";
 
 export class FgRacketTrekken extends LitElement {
