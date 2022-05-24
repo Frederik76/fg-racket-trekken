@@ -481,6 +481,5 @@ export class FgRacketTrekken extends LitElement {
       </div>
     `;
   }
-
-
 }
+customElements.define('fg-racket-trekken', FgRacketTrekken);
