@@ -129,7 +129,7 @@ export class FgRacketTrekken extends LitElement {
   firstUpdated() {
     const players = localStorage.getItem('players') ? localStorage.getItem('players') : [];
     this.players = players.length === 0 ? players : JSON.parse(players);
-    // this.players = contestants;
+    this.players = contestants;
   }
 
   shuffleArray(array) {
@@ -154,6 +154,7 @@ export class FgRacketTrekken extends LitElement {
   }
 
   handleCreate () {
+    if (this.players.length < 4) { window.alert('Not enough players to start a match!'); return;}
     this.round += 1;
     localStorage.setItem('round', this.round);
     this.shuffleArray(this.players);
@@ -161,17 +162,14 @@ export class FgRacketTrekken extends LitElement {
     const numberOfGames = Math.floor(this.players.length / 4) < 4 ? Math.floor(this.players.length / 4) : 3;
     let amountOfMen = this.players.filter((player)=>player.sex === 'm').length;
     let amountOfWomen = this.players.length - amountOfMen;
+    if (this.round > 1 && (amountOfWomen + amountOfMen) > 4 ) {this.setPauze(amountOfWomen, amountOfMen)}
     const types = ['MD', 'DD', 'HD', 'MD', 'MD'];
-    console.log('men women gamnes', amountOfMen, amountOfWomen, numberOfGames);
+    console.log('men women games', amountOfMen, amountOfWomen, numberOfGames);
 
     for(let i = 0; i < numberOfGames; i+=1){
       amountOfMen = this.players.filter((player)=>player.sex === 'm'&& player.state < this.round).length;
       amountOfWomen = this.players.filter((player)=>player.sex === 'f'&& player.state < this.round).length;
-      let total = amountOfMen + amountOfWomen;
-      if (this.round > 1 && i === (numberOfGames - 1) && total > 4 ) {this.setPauze(amountOfWomen, amountOfMen)}
-      amountOfMen = this.players.filter((player)=>player.sex === 'm'&& player.state < this.round).length;
-      amountOfWomen = this.players.filter((player)=>player.sex === 'f'&& player.state < this.round).length;
-      total = amountOfMen + amountOfWomen;
+      const total = amountOfMen + amountOfWomen;
       console.log('verdeling', amountOfWomen, amountOfMen, total);
       if (amountOfWomen > 3 && amountOfMen > 3) {
         this.shuffleArray(types);
@@ -304,7 +302,6 @@ export class FgRacketTrekken extends LitElement {
       return a.games_played_in_succession - b.games_played_in_succession;
     });
     localStorage.setItem('players',JSON.stringify(this.players));
-    if (this.players.length < 4) { window.alert('Not enough players to start a match!'); return;}
     // create game with first player
     if ( round === 1 && playerSex) {
       game.player1 = this.players.find(player => player.state < round && player.sex === playerSex );
