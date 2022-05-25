@@ -373,7 +373,8 @@ export class FgRacketTrekken extends LitElement {
   handleClear() {
     localStorage.clear();
     this.round = 0;
-    localStorage.setItem('round', this.round);
+    this.players = [];
+    this.games = [];
     this.requestUpdate();
   }
 
