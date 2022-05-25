@@ -4,6 +4,10 @@ import { LitElement, html, css } from 'https://unpkg.com/lit-element/lit-element
 import 'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/components/button/button.js';
 // eslint-disable-next-line import/no-unresolved
 import 'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/components/input/input.js';
+// eslint-disable-next-line import/no-unresolved
+import 'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/components/select/select.js';
+// eslint-disable-next-line import/no-unresolved
+import 'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/components/menu-item/menu-item.js';
 import { contestants } from "./spelers.js";
 
 export class FgRacketTrekken extends LitElement {
@@ -46,8 +50,9 @@ export class FgRacketTrekken extends LitElement {
         margin-right: 8px;
       }
 
-      .input_rating, .input_sex {
-        width: 50px;
+      .input_rating,
+      .input_sex {
+        width: 130px;
       }
 
       .submit {
@@ -129,7 +134,7 @@ export class FgRacketTrekken extends LitElement {
   firstUpdated() {
     const players = localStorage.getItem('players') ? localStorage.getItem('players') : [];
     this.players = players.length === 0 ? players : JSON.parse(players);
-    this.players = contestants;
+    // this.players = contestants;
   }
 
   shuffleArray(array) {
@@ -386,7 +391,16 @@ export class FgRacketTrekken extends LitElement {
           <div class="card__content">
             <h2>${this.title}</h2>
             <form action="">
-              <sl-input name="player" id="player" class="input" label="Player"></sl-input><sl-input name="rating" id="rating" class="input input_rating" label="Rating"></sl-input><sl-input name="sex" id="sex" class="input input_sex" label="Sex"></sl-input>
+              <sl-input name="player" id="player" class="input" label="Player"></sl-input>
+              <sl-select size="medium" name="rating" id="rating" class="input input_rating" label="Rating">
+                <sl-menu-item value="9">9</sl-menu-item>
+                <sl-menu-item value="8">8</sl-menu-item>
+                <sl-menu-item value="7">7 or higher</sl-menu-item>
+              </sl-select>
+              <sl-select size="medium" name="sex" id="sex" class="input input_sex" label="Sex">
+                <sl-menu-item value="m">Male</sl-menu-item>
+                <sl-menu-item value="f">Female</sl-menu-item>
+              </sl-select>
               <sl-button class="submit" variant="primary" @click="${(e)=>this.handleSubmit(e)}">Submit</sl-button>  <sl-button variant="neutral" class="submit" @click="${()=>this.handleClear()}">Clear all</sl-button>
             </form>
 
