@@ -195,6 +195,7 @@ export class FgRacketTrekken extends LitElement {
       // eslint-disable-next-line no-param-reassign
       player.games_played_in_succession = 0;
     })
+    localStorage.setItem('players',JSON.stringify(this.players));
   }
 
   getPlayers(player1, gameRating, sexOfFirstPlayer, round, i, type = 'MD') {
