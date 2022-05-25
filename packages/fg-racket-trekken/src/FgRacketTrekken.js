@@ -25,6 +25,7 @@ export class FgRacketTrekken extends LitElement {
       .page-container {
         text-align: center;
         margin-top: 64px;
+        margin-bottom: 64px;
       }
 
       .card {
@@ -382,7 +383,6 @@ export class FgRacketTrekken extends LitElement {
   render() {
     const { players, games } = this;
     return html`
-      <ing-example-nav-bar></ing-example-nav-bar>
       <div class="page-container">
         <div class="card intro">
           <div class="card__content">
