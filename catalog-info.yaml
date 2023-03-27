@@ -3,18 +3,10 @@ kind: Component
 metadata:
   name: fg-racket-trekken
   description: Software to automate racket trekken
-  labels:
-    example.com/custom: custom_label_value
   annotations:
-    example.com/service-discovery: artistweb
-    circleci.com/project-slug: github/example-org/artist-website
+    example.com/service-discovery: racket
   tags:
-    - java
-  links:
-    - url: https://admin.example-org.com
-      title: Admin Dashboard
-      icon: dashboard
-      type: admin-dashboard
+    - javascript
 spec:
   type: website
   lifecycle: production
